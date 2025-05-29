@@ -61,7 +61,9 @@ import { RouterModule } from '@angular/router';
 
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-8">
       <!-- Card Ansia -->
-      <div class="card bg-blue-100 shadow-lg rounded-lg p-6">
+      <div
+        class="card bg-blue-100 shadow-lg rounded-lg p-6 hover:shadow-2xl transition-shadow duration-300"
+      >
         <div class="flex items-center mb-4">
           <h2 class="text-2xl font-semibold text-blue-600 ">Ansia</h2>
         </div>
@@ -78,7 +80,9 @@ import { RouterModule } from '@angular/router';
       </div>
 
       <!-- Card Depressione -->
-      <div class="card bg-purple-100 shadow-lg rounded-lg p-6">
+      <div
+        class="card bg-purple-100 shadow-lg rounded-lg p-6 hover:shadow-2xl transition-shadow duration-300"
+      >
         <h2 class="text-2xl font-semibold text-purple-600 mb-4">Depressione</h2>
         <p class="text-gray-700">
           La depressione può portare a sentimenti di tristezza persistente.
@@ -93,7 +97,9 @@ import { RouterModule } from '@angular/router';
       </div>
 
       <!-- Card Adolescenza -->
-      <div class="card bg-green-100 shadow-lg rounded-lg p-6">
+      <div
+        class="card bg-green-100 shadow-lg rounded-lg p-6 hover:shadow-2xl transition-shadow duration-300"
+      >
         <h2 class="text-2xl font-semibold text-green-600 mb-4">Stress</h2>
         <p class="text-gray-700">
           Lo stress è una risposta psicofisica a compiti anche diversi tra loro,
@@ -141,7 +147,9 @@ import { RouterModule } from '@angular/router';
     </div>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-8">
       <!-- Card  -->
-      <div class="card bg-blue-100 shadow-lg rounded-lg p-6">
+      <div
+        class="card bg-blue-100 shadow-lg rounded-lg p-6 hover:shadow-2xl transition-shadow duration-300"
+      >
         <h2 class="text-2xl font-semibold text-blue-600 mb-4">
           Sedute di coppia
         </h2>
@@ -158,7 +166,9 @@ import { RouterModule } from '@angular/router';
       </div>
 
       <!-- Card  -->
-      <div class="card bg-purple-100 shadow-lg rounded-lg p-6">
+      <div
+        class="card bg-purple-100 shadow-lg rounded-lg p-6 hover:shadow-2xl transition-shadow duration-300"
+      >
         <h2 class="text-2xl font-semibold text-purple-600 mb-4">
           Sedute Singole
         </h2>
@@ -175,7 +185,9 @@ import { RouterModule } from '@angular/router';
       </div>
 
       <!-- Card  -->
-      <div class="card bg-green-100 shadow-lg rounded-lg p-6">
+      <div
+        class="card bg-green-100 shadow-lg rounded-lg p-6 hover:shadow-2xl transition-shadow duration-300"
+      >
         <h2 class="text-2xl font-semibold text-green-600 mb-4">
           Sedute familiari
         </h2>
@@ -232,7 +244,9 @@ import { RouterModule } from '@angular/router';
     </div>
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 p-8 ">
       <!-- Card Yoga -->
-      <div class="card bg-yellow-100 shadow-lg rounded-lg p-6 ">
+      <div
+        class="card bg-yellow-100 shadow-lg rounded-lg p-6 hover:shadow-2xl transition-shadow duration-300 "
+      >
         <h2 class="text-2xl font-semibold text-yellow-600 mb-4">Yoga</h2>
         <p class="text-gray-700">
           Esplora la pratica dello yoga come strumento per la connessione
@@ -247,7 +261,9 @@ import { RouterModule } from '@angular/router';
       </div>
 
       <!-- Card Arte Terapia -->
-      <div class="card bg-pink-100 shadow-lg rounded-lg p-6 ">
+      <div
+        class="card bg-pink-100 shadow-lg rounded-lg p-6 hover:shadow-2xl transition-shadow duration-300 "
+      >
         <h2 class="text-2xl font-semibold text-pink-600 mb-4">Arte Terapia</h2>
         <p class="text-gray-700">
           Scopri come l’espressione creativa attraverso l’arte può aiutarti a
@@ -264,7 +280,7 @@ import { RouterModule } from '@angular/router';
     <div
       class="flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-8 p-10 mt-20 sm:mb-0"
     >
-      <!-- Colonna con testo -->
+      <!-- Colonna con testo Arte terapia -->
       <div class="w-full md:w-1/2 text-center md:text-left sm:text-center ">
         <h1 class="lg:text-3xl font-bold mb-4 sm: text-2xl">
           Arte: una nostra alleata
@@ -293,6 +309,39 @@ import { RouterModule } from '@angular/router';
         </div>
       </div>
     </div>
+    <!-- Sezione Letture consigliate - Versione più accattivante -->
+    <div class="flex justify-end mt-10 px-6">
+      <div
+        class="bg-gradient-to-r from-gray-50 via-white to-blue-50 border-l-8 border-blue-400 p-8 rounded-xl shadow-lg w-full md:w-2/3 lg:w-2/3 mx-auto hover:shadow-2xl transition-shadow duration-300"
+      >
+        <div class="flex items-center mb-4">
+          <h3 class="text-2xl font-extrabold text-blue-400 ">
+            Letture consigliate
+          </h3>
+        </div>
+        <p class="text-blue-900 font-semibold mb-1 text-lg">
+          Manuale di Kundarte®: La via del disegno<br />
+          <span class="italic text-blue-900 text-base">di Klirò</span>
+        </p>
+        <a
+          href="https://amzn.eu/d/erbapkb"
+          target="_blank"
+          class="inline-block mt-2 text-blue-500-600 font-semibold underline hover:text-pink-800 transition-colors duration-200"
+        >
+          Vai al libro su Amazon
+        </a>
+        <p class=" mt-5 leading-relaxed text-justify">
+          Kundarte è un metodo che integra pratiche artistiche e yogiche per
+          stimolare l'espressione creativa e il benessere interiore. Sviluppato
+          da Klirò, artista e insegnante di yoga e discipline artistiche,
+          esplora il legame profondo tra gesto, respiro e meditazione. Il suo
+          manuale offre spunti preziosi per chi desidera approfondire la
+          connessione tra corpo e immaginazione, trasformando il processo
+          creativo in un'esperienza di armonia e presenza.
+        </p>
+      </div>
+    </div>
+
     <!-- contatti -->
     <div class="text-center mt-10 sm:mt-20">
       <!-- Titolo -->

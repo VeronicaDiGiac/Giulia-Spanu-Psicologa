@@ -86,14 +86,14 @@ export class ServiziSectionComponent {
         'Yoga come supporto alla gestione emotiva',
       ],
     },
-    {
-      titolo: 'Psicoterapia (in formazione)',
-      dettagli: [
-        'Approccio umanistico-esistenziale',
-        'Supporto per crisi esistenziali',
-        'Gestione delle relazioni interpersonali',
-      ],
-    },
+    // {
+    //   titolo: 'Psicoterapia (in formazione)',
+    //   dettagli: [
+    //     'Approccio umanistico-esistenziale',
+    //     'Supporto per crisi esistenziali',
+    //     'Gestione delle relazioni interpersonali',
+    //   ],
+    // },
     {
       titolo: 'Disturbi d’Ansia',
       dettagli: [
@@ -108,7 +108,7 @@ export class ServiziSectionComponent {
       dettagli: [
         'Depressione maggiore',
         'Distimia (depressione cronica di lieve entità)',
-        'Disturbo bipolare',
+        // 'Disturbo bipolare',
       ],
     },
     {
@@ -126,15 +126,15 @@ export class ServiziSectionComponent {
         'Disturbo dismorfico corporeo',
       ],
     },
-    {
-      titolo: 'Disturbi della Personalità',
-      dettagli: [
-        'Disturbo narcisistico di personalità',
-        'Disturbo borderline di personalità',
-        'Disturbo evitante di personalità',
-        'Disturbo dipendente di personalità',
-      ],
-    },
+    // {
+    //   titolo: 'Disturbi della Personalità',
+    //   dettagli: [
+    //     'Disturbo narcisistico di personalità',
+    //     'Disturbo borderline di personalità',
+    //     'Disturbo evitante di personalità',
+    //     'Disturbo dipendente di personalità',
+    //   ],
+    // },
     {
       titolo: 'Disturbi dello Spettro Autistico',
       dettagli: [

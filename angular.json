@@ -22,11 +22,12 @@
               {
                 "glob": "**/*",
                 "input": "public"
-              }
+              },
+              "src/_redirects"
             ],
             "styles": ["src/styles.css"],
             "scripts": [],
-            "baseHref": "/Giulia-Spanu-website/"
+            "baseHref": "/"
           },
           "configurations": {
             "production": {

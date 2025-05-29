@@ -35,6 +35,7 @@ import { RouterOutlet } from '@angular/router';
             </div>
           </div>
           <a class="btn btn-ghost text-xl" routerLink="home">Giulia Spanu</a>
+          <!-- <img src="../../../assets/logo_350px-Photoroom.jpg" alt="" /> -->
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
