@@ -1,3 +1,5 @@
+declare var process: { env: { [key: string]: string } };
+
 export const environment = {
   production: true,
   emailJsServiceId: process.env['NG_APP_EMAILJS_SERVICE_ID'] || '',
