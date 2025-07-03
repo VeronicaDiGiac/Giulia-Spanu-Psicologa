@@ -5,7 +5,7 @@
       emailJsServiceId: '$EMAILJS_SERVICE_ID',
       emailJsTemplateId: '$EMAILJS_TEMPLATE_ID',
       emailJsPublicKey: '$EMAILJS_PUBLIC_KEY'
-    };" > src/environments/environment.private.ts &&
+    };" > src/environments/environments.private.ts &&
     ng build --configuration production
   """
   publish = "dist/giulia-spanu-website/browser"
