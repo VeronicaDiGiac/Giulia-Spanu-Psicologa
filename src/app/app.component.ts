@@ -25,5 +25,5 @@ import { WhatsappButtonComponent } from './components/whatsapp-button/whatsapp-b
   styles: ``,
 })
 export class AppComponent {
-  title = 'giulia-spanu-website';
+  title = 'Giulia Spanu - Psicologa a Roma | Psicoterapia, Yoga e Arte Terapia';
 }
