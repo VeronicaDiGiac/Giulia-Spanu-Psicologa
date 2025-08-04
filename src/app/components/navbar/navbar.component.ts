@@ -34,26 +34,31 @@ import { RouterOutlet } from '@angular/router';
               </svg>
             </div>
           </div>
-          <a class="btn btn-ghost text-xl" routerLink="home">Giulia Spanu</a>
-          <!-- <img src="../../../assets/logo_350px-Photoroom.jpg" alt="" /> -->
+          <!-- <a class="btn btn-ghost text-xl" >Giulia Spanu</a> -->
+          <img
+            routerLink="home"
+            src="../../../assets/logotrasparente.png"
+            alt="Logo"
+            class="h-16 w-auto cursor-pointer"
+          />
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
             <li
               routerLink="chi-sono"
-              class="text-lg hover:bg-blue-200 rounded-full"
+              class="text-xl hover:bg-blue-200 rounded-full"
             >
               <a>Chi sono</a>
             </li>
             <li
               routerLink="servizi"
-              class="text-lg hover:bg-blue-200 rounded-full"
+              class="text-xl hover:bg-blue-200 rounded-full"
             >
               <a>Servizi</a>
             </li>
             <li
               routerLink="contatti"
-              class="text-lg hover:bg-blue-200 rounded-full"
+              class="text-xl hover:bg-blue-200 rounded-full"
             >
               <a>Contatti</a>
             </li>
@@ -67,7 +72,7 @@ import { RouterOutlet } from '@angular/router';
         [class.overflow-hidden]="!isMenuOpen"
       >
         <li class="border-b border-gray-300 p-3 text-center hover:bg-blue-100">
-          <a routerLink="chi-sono">Chi sono</a>
+          <a routerLink="chi-sono ">Chi sono</a>
         </li>
         <li class="border-b border-gray-300 p-3 text-center hover:bg-blue-100">
           <a routerLink="servizi">Servizi</a>

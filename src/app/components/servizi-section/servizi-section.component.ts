@@ -7,50 +7,131 @@ import { CardsServiziComponent } from '../cards-servizi/cards-servizi.component'
   standalone: true,
   imports: [NgFor, CardsServiziComponent],
   template: `
-    <h1
-      class="text-center m-5 p-2 text-blue-300 text-3xl cursor-default font-semibold shadow-md"
+    <div
+      class="relative w-full h-[70vh] min-h-[400px] flex items-center justify-center bg-contain bg-center bg-no-repeat home-background"
     >
-      Servizi psicologici
-    </h1>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
-      <app-cards-servizi
-        *ngFor="let servizio of servizi"
-        [titolo]="servizio.titolo"
-        [dettagli]="servizio.dettagli"
-      ></app-cards-servizi>
+      <!-- Overlay -->
+      <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+
+      <!-- Content -->
+      <div
+        class="relative z-10 text-center px-4 sm:px-6 md:px-8 max-w-4xl mx-auto"
+      >
+        <h1
+          class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4"
+        >
+          I miei servizi professionali
+        </h1>
+        <p class="text-base sm:text-lg md:text-xl text-gray-100">
+          Percorsi personalizzati per il tuo benessere psicologico ed emotivo
+        </p>
+      </div>
     </div>
-    <h1
-      class="text-center m-5 p-2 text-yellow-600 text-3xl cursor-default font-semibold shadow-md"
-    >
-      Servizi Yoga
-    </h1>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
-      <app-cards-servizi
-        *ngFor="let servizioY of serviziYoga"
-        [titolo]="servizioY.titolo"
-        [dettagli]="servizioY.dettagli"
-        [sfondoGiallo]="true"
-      >
-        ></app-cards-servizi
-      >
-    </div>
-    <h1
-      class="text-center m-5 p-2 text-pink-400 text-3xl cursor-default font-semibold shadow-md"
-    >
-      Servizi Arte Terapia
-    </h1>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
-      <app-cards-servizi
-        *ngFor="let servizioArte of serviziArte"
-        [titolo]="servizioArte.titolo"
-        [dettagli]="servizioArte.dettagli"
-        [sfondoRosa]="true"
-      >
-        ></app-cards-servizi
-      >
+
+    <!-- Main Content Container -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <!-- Psicologia Section -->
+      <div class="mb-20">
+        <div class="text-center mb-12">
+          <div class="inline-block relative">
+            <h2
+              class="text-3xl md:text-4xl font-bold text-blue-600 relative z-10"
+            >
+              Servizi Psicologici
+            </h2>
+            <div
+              class="absolute -bottom-2 left-0 right-0 h-2 bg-blue-100/50 rounded-full z-0"
+            ></div>
+          </div>
+          <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
+            Approcci personalizzati per diverse esigenze psicologiche e di
+            crescita personale
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <app-cards-servizi
+            *ngFor="let servizio of servizi"
+            [titolo]="servizio.titolo"
+            [dettagli]="servizio.dettagli"
+          ></app-cards-servizi>
+        </div>
+      </div>
+
+      <!-- Yoga Section -->
+      <div class="mb-20">
+        <div class="text-center mb-12">
+          <div class="inline-block relative">
+            <h2
+              class="text-3xl md:text-4xl font-bold text-yellow-600 relative z-10"
+            >
+              Servizi Yoga
+            </h2>
+            <div
+              class="absolute -bottom-2 left-0 right-0 h-2 bg-yellow-100/50 rounded-full z-0"
+            ></div>
+          </div>
+          <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
+            Percorsi integrati per il benessere psicofisico attraverso la
+            pratica yogica
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <app-cards-servizi
+            *ngFor="let servizioY of serviziYoga"
+            [titolo]="servizioY.titolo"
+            [dettagli]="servizioY.dettagli"
+            [sfondoGiallo]="true"
+          ></app-cards-servizi>
+        </div>
+      </div>
+
+      <!-- Arte Terapia Section -->
+      <div class="mb-20">
+        <div class="text-center mb-12">
+          <div class="inline-block relative">
+            <h2
+              class="text-3xl md:text-4xl font-bold text-pink-600 relative z-10"
+            >
+              Arte Terapia
+            </h2>
+            <div
+              class="absolute -bottom-2 left-0 right-0 h-2 bg-pink-100/50 rounded-full z-0"
+            ></div>
+          </div>
+          <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
+            Espressione creativa come strumento di esplorazione e crescita
+            interiore
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <app-cards-servizi
+            *ngFor="let servizioArte of serviziArte"
+            [titolo]="servizioArte.titolo"
+            [dettagli]="servizioArte.dettagli"
+            [sfondoRosa]="true"
+          ></app-cards-servizi>
+        </div>
+      </div>
     </div>
   `,
-  styles: ``,
+  styles: `
+  .home-background {
+    background-image: url('src/assets/herosectionservizi.png');
+    background-size: cover;
+    background-position: center;
+    width: 100vw;          
+    height: 100vh;        
+    margin: 0;            
+    padding: 0;            
+    position: relative;    
+    overflow: hidden;    
+    left: 50%;             
+    transform: translateX(-50%); 
+    margin-top: -60px;
+}`,
 })
 export class ServiziSectionComponent {
   servizi: any = [

@@ -74,15 +74,12 @@ import { Component } from '@angular/core';
         <img class="w-64 h-64 object-cover   foto_arte" />
         <div class="text-center md:text-left max-w-prose">
           <p class="text-gray-700 leading-relaxed p-5">
-            Oggi sono specializzanda in Psicoterapia Umanistico Esistenziale, un
-            approccio che mette al centro l’individuo nella sua unicità,
-            valorizzandone risorse e potenzialità. Il mio lavoro come Psicologa
-            si distingue per un approccio integrato: alla terapia tradizionale
-            affianco l’arte come potente mezzo di espressione e guarigione,
-            unendo le mie competenze di artista e arteterapeuta. Inoltre,
-            integro tecniche yogiche di respirazione e rilassamento, aiutando i
-            miei pazienti a riconnettersi con il proprio corpo e a gestire
-            meglio lo stress.
+            Il mio lavoro come Psicologa si distingue per un approccio
+            integrato: alla terapia tradizionale affianco l’arte come potente
+            mezzo di espressione e guarigione, unendo le mie competenze di
+            artista e arteterapeuta. Inoltre, integro tecniche yogiche di
+            respirazione e rilassamento, aiutando i miei pazienti a
+            riconnettersi con il proprio corpo e a gestire meglio lo stress.
           </p>
           <p class="text-gray-700 leading-relaxed mt-4 p-5">
             Credo profondamente che ogni persona abbia in sé la capacità di
