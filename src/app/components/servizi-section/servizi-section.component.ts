@@ -1,30 +1,36 @@
 import { Component } from '@angular/core';
 import { NgFor } from '@angular/common';
+import { ButtonComponent } from '../button/button.component';
 import { CardsServiziComponent } from '../cards-servizi/cards-servizi.component';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-servizi-section',
   standalone: true,
-  imports: [NgFor, CardsServiziComponent],
+  imports: [NgFor, CardsServiziComponent, ButtonComponent, RouterLink],
   template: `
     <div
       class="relative w-full h-[70vh] min-h-[400px] flex items-center justify-center bg-contain bg-center bg-no-repeat home-background"
     >
       <!-- Overlay -->
       <div class="absolute inset-0 bg-black bg-opacity-40"></div>
-
       <!-- Content -->
       <div
         class="relative z-10 text-center px-4 sm:px-6 md:px-8 max-w-4xl mx-auto"
       >
         <h1
-          class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4"
+          class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 uppercase"
         >
           I miei servizi professionali
         </h1>
-        <p class="text-base sm:text-lg md:text-xl text-gray-100">
+        <p class="text-base sm:text-lg md:text-xl text-gray-100 mb-6">
           Percorsi personalizzati per il tuo benessere psicologico ed emotivo
         </p>
+        <app-button
+          [btnlabel]="'Contatti'"
+          [routerLink]="'/contatti'"
+          class="mx-auto inline-block rounded-full bg-white text-blue-600 hover:bg-blue-50 px-6 py-2 sm:px-8 sm:py-3 text-base sm:text-lg font-semibold shadow-md transition-colors duration-300"
+        ></app-button>
       </div>
     </div>
 
